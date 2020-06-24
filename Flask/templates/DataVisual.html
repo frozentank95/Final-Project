@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body style="background-color:rgb(252, 250, 250)">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/about">About</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/dataset">Dataset</a>
+            <a class="nav-item nav-link active" href="http://127.0.0.1:5000/data_visualization">Data Visualization</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:5000/prediction">Prediction</a>
+            
+          </div>
+        </div>
+    </nav>
+    <br>
+    <center>
+        
+        <h2>DATA VISUALIZATION</h2>
+    </center>
+    <br>
+
+    <center>
+    <div class="accordion" id="accordionExample">
+
+        <div class="card" style="max-width: 1250px">
+          <div class="card-header bg-info" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block  text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Gender
+              </button>
+            </h2>
+          </div>     
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+            <center>
+              <img src="http://127.0.0.1:5000/static/1a.png" class="img-fluid" alt="Responsive image">
+              <h5>From plot above we can see Gender Distribution based on Default Payment, Amount Given Credit, and Total Bill</h5>
+            </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1250px">
+          <div class="card-header bg-info" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Education
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+            <center>
+              <img src="http://127.0.0.1:5000/static/2a.png" class="img-fluid" alt="Responsive image">
+              <h5>From plot above we can see Education Distribution based on Default Payment, Amount Given Credit, and Total Bill</h5>
+            </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1250px">
+          <div class="card-header bg-info" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Marital Status
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+            <center>
+              <img src="http://127.0.0.1:5000/static/3a.png" class="img-fluid" alt="Responsive image">
+              <h5>From plot above we can see Marital Status Distribution based on Default Payment, Amount Given Credit, and Total Bill</h5>
+            </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1250px">
+          <div class="card-header bg-info" id="headingFour">
+            <h2 class="mb-0">               
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Amount Given Credit
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+              <center>
+                <img src="http://127.0.0.1:5000/static/4a.png" class="img-fluid" alt="Responsive image">
+                <h5>From plot above we can see Amount Given Credit Distribution which mostly around 0 - 400k NT Dollar</h5>
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1250px">
+          <div class="card-header bg-info" id="headingFive">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Age
+              </button>
+            </h2>
+          </div>
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+              <center>
+                <img src="http://127.0.0.1:5000/static/5a.png" class="img-fluid" alt="Responsive image">
+                <h5>From plot above we can see Customer Age Distribution, mostly around 21-50 years old</h5>
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1250px" >
+          <div class="card-header bg-info" id="headingSix">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Total Bill
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="card-body">
+              <center>
+                <img src="http://127.0.0.1:5000/static/6a.png" class="img-fluid" alt="Responsive image">
+                <h5>From plot above we can see Customer Total Bill Distribution</h5>
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1250px" >
+          <div class="card-header bg-info" id="headingSeven">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                Mean Pay Late
+              </button>
+            </h2>
+          </div>
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+            <div class="card-body">
+              <center>
+                <img src="http://127.0.0.1:5000/static/7a.png" class="img-fluid" alt="Responsive image">
+                <h5>From plot above we can see Customer Mean Pay Late Distribution. 
+                  This shows that most customer have pay rate around 0 - 1 month each months
+                </h5>
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1250px" >
+          <div class="card-header bg-info" id="headingEight">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                Debt
+              </button>
+            </h2>
+          </div>
+          <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+            <div class="card-body">
+              <center>
+                <img src="http://127.0.0.1:5000/static/8a.png" class="img-fluid" alt="Responsive image">
+                <h5>From plot above we can see Customer Debt Distribution</h5>
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1250px" >
+          <div class="card-header bg-info" id="headingNine">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                Debt and Education Level
+              </button>
+            </h2>
+          </div>
+          <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+            <div class="card-body">
+              <center>
+                <img src="http://127.0.0.1:5000/static/9.png" class="img-fluid" alt="Responsive image">
+                <h5>From plot above we can see that Graduate School Education customer have wider range of Debt</h5>
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="max-width: 1250px" >
+          <div class="card-header bg-info" id="headingTen">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-white text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="CollapseTen">
+                ROC_AUC Curve
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+            <div class="card-body">
+              <center>
+                <img src="http://127.0.0.1:5000/static/10.png" class="img-fluid" alt="Responsive image">
+                <h5>Final Model ROC_AUC Curve</h5>
+              </center>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </center>
+
+
+</body>
+</html>
